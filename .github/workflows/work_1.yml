@@ -2,7 +2,7 @@ name: Work 1 Dorx
 on: [push]
 jobs:
   builds:
-    run-ons: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-    - name: Print something
-      run: echo "Hola Pitaya!"
+      - name: Print something
+        run: echo "Hola Pitaya!"
