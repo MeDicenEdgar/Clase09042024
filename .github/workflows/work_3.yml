@@ -3,13 +3,11 @@ on: push
 jobs:
   build-node:
     runs-on: ubuntu-latest
-    container: python:3.9
+    container: cassandra:4.0
     steps:
-    - name: Python print
-      run: python3 -version
+    - name: cassandra print
+      run: cassandrea --version
       
-    - name: Python print
-      run: python3 prueba.py
     
       
           
