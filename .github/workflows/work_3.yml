@@ -5,4 +5,4 @@ jobs:
     container: python:3.9
     steps:
     - name: Python print
-      run: python3 prueba.py
+      run: python3 C:\Users\edgar\Desktop\Clase09042024\Clase09042024\prueba.py
