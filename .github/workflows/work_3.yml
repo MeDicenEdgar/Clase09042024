@@ -1,13 +1,17 @@
-name: python
-on: push
+name: mongo-action
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  build-node:
+  build-mongo:
     runs-on: ubuntu-latest
-    container: cassandra:4.0
+    container:
+      image: mongo:latest
+      options: --name mongo-container  
+
     steps:
-    - name: cassandra print
-      run: cassandra --version
-      
-    
-      
-          
+    - name: Check MongoDB version
+      run: mongod --version
