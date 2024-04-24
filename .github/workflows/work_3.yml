@@ -1,8 +1,22 @@
-on: push
+name: Python Action
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  build-node:
+  run_python_script:
     runs-on: ubuntu-latest
-    container: python:3.9
+    
     steps:
-    - name: Python print
-      run: python3 C:\Users\edgar\Desktop\Clase09042024\Clase09042024\prueba.py
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'  # Replace 'x' with your desired Python version
+
+    - name: Run Python script
+      run: Clase09042024\prueba.pys
