@@ -5,9 +5,9 @@ jobs:
     container: python:3.9
     steps:
     - name: Python print
-      run: python
-    - name: Python print 2
-      run: print("hola mundo")
+      run: python3 prueba.py
+    - name: Python print
+      run: python3 script.py
       
       
           
