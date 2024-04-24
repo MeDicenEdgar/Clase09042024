@@ -1,8 +1,17 @@
-name: Work 1 Dorx
-on: [push]
+name: mongo-action
+
+on:
+  push:
+    branches:
+      - main
+
 jobs:
-  builds:
+  build-mongo:
     runs-on: ubuntu-latest
+    container:
+      image: mongo:latest
+      options: --name mongo-container  
+
     steps:
-      - name: Print something
-        run: echo "Hola Pitaya!"
+    - name: Check MongoDB version
+      run: mongod --version
