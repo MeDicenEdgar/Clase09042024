@@ -1,8 +1,7 @@
 name: mongo-action
 
-on:
-  push
-  jobs:
+on: push
+jobs:
   build-mongo:
     runs-on: ubuntu-latest
     container:
