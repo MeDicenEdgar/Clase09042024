@@ -6,7 +6,7 @@ jobs:
     container: cassandra:4.0
     steps:
     - name: cassandra print
-      run: cassandrea --version
+      run: cassandra --version
       
     
       
