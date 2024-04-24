@@ -1,22 +1,13 @@
-name: Python Action
-
-on:
-  push:
-    branches:
-      - main
-
+on: push
 jobs:
-  run_python_script:
+  build-node:
     runs-on: ubuntu-latest
-    
+    container: python:3.9
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.9'  # Replace 'x' with your desired Python version
-
-    - name: Run Python script
-      run: Clase09042024\prueba.pys
+    - name: Python print
+      run: python
+    - name: Python print 2
+      run: print("hola mundo")
+      
+      
+          
