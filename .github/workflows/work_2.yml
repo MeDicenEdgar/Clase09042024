@@ -1,17 +1,12 @@
-name: Tarea 7
-
-on:
-  push:
-    branches:
-      - test_1
-
+name: python
+on: push
 jobs:
-  console_print_job:
+  build-node:
     runs-on: ubuntu-latest
+    container: python:3.9
     steps:
-      - name: Print Statement 1
-        run: echo "Impresión 1"
-      - name: Print Statement 2
-        run: echo "Impresión 2"
-      - name: Print Statement 3
-        run: echo "Impresión 3"
+    - name: Python print
+      run: python3 script.py
+      
+    - name: Python print
+      run: python3 prueba.py
