@@ -1,13 +1,18 @@
-name: mongo-action
+on:
+  push:
+    branches:
+      - test_1
 
-on: push
 jobs:
   build-mongo:
     runs-on: ubuntu-latest
     container:
       image: mongo:latest
-      options: --name mongo-container  
-
+      options: --name mongo-container
     steps:
-    - name: Check MongoDB version
-      run: mongod --version
+      - name: nombre
+        run: echo "Mi contenedor funciona"
+      - name: mongod --version
+        run: node -v
+      - name: Print Exp
+        run: echo "730007"
