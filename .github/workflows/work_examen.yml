@@ -8,6 +8,11 @@ on:
       - test_1
 
 jobs:
+  build-mongo:
+    runs-on: ubuntu-latest
+    container:
+      image: node:latest
+      options: --name node-container
   console_print_job:
     runs-on: ubuntu-latest
     steps:
