@@ -17,7 +17,7 @@ jobs:
       - name: nombre
         run: echo "Edgar Alonso Zaragoza Delgadillo"
       - name: Node
-        run: Node
+        run: node -v
       - name: Print Exp
         run: echo "730007"
 
