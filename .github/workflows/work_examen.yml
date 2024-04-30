@@ -13,8 +13,6 @@ jobs:
     container:
       image: node:latest
       options: --name node-container
-  console_print_job:
-    runs-on: ubuntu-latest
     steps:
       - name: nombre
         run: echo "Edgar Alonso Zaragoza Delgadillo"
@@ -22,3 +20,5 @@ jobs:
         run: Node
       - name: Print Exp
         run: echo "730007"
+
+    
