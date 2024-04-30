@@ -1,0 +1,14 @@
+
+name: node.js
+
+on: push
+jobs:
+  build-node:
+    runs-on: ubuntu-latest
+    steps:
+    - name: name
+      run: run echo "Edgar Alonso Zaragoza Delgadillo"
+    - name: Check Node.js version
+      run: Node
+      - name: exp
+      run: run echo "730007"
