@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: nombre
         run: echo "Mi contenedor funciona"
-      - name: mongod --version
-        run: node -v
+      - name: mongo version
+        run: mongod --version
       - name: Print Exp
         run: echo "730007"
